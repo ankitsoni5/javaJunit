@@ -5,7 +5,7 @@ steps:
     - '-Dsonar.host.url=http://35.188.209.183:9000'
     - '-Dsonar.login=f2392fe717f67e777bd0c58963d7491938eae781'
     - '-Dsonar.projectKey=javajunit'
-    - '-Dsonar.sources=.'
+    - '-Dsonar.sources=./src/main/'
 
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/concrete-crow-244606/javajunit', '.' ]
