@@ -1,0 +1,7 @@
+steps:
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/concrete-crow-244606/javajunit', '.' ]
+
+images:
+- 'gcr.io/concrete-crow-244606/javajunit'
